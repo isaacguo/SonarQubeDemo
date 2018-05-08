@@ -15,7 +15,11 @@ int add(int a, int b) {
 }
 void SayHello1(string message) {
         if (message.empty()) {
+  		std::string str{"123.123.123.123"};
                 cout << "The input is empty" << endl;
+
+                cout << str << endl;
+
         }
         else {
                 cout << message << endl;
