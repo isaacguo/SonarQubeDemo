@@ -14,7 +14,7 @@ node() {
                 }
                   
                 sh 'gcovr -x -r . > OpenCppCoverageDemo/cmake/x64/debug/reports/gcovr_report.xml'
-                sh 'cppcheck --xml --xml-version=2 --enable=all TestSource 2> OpenCppCoverageDemo/cmake/x64/debug/reports/cppcheck-report.xml || true'
+                sh 'cppcheck --xml --xml-version=2 --enable=all OpenCppCoverageDemo/TestSource 2> OpenCppCoverageDemo/cmake/x64/debug/reports/cppcheck-report.xml || true'
 
         }
         stage("Analyze Code"){
