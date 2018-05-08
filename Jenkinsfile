@@ -1,7 +1,9 @@
 
 node() {
 
+set +e;
         checkout scm
+
 
         stage("Build x64 Debug") {
 		sh 'chmod u+x ./build.sh'
