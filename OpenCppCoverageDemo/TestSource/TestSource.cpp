@@ -15,11 +15,9 @@ int add(int a, int b) {
 }
 void SayHello1(string message) {
 
-//TODO: just do it tomorrow
-//
         int *p=new int(25);
         delete p;
-        //delete p;
+        delete p;
         if (message.empty()) {
   		std::string str{"123.123.123.123"};
                 cout << "The input is empty" << endl;
