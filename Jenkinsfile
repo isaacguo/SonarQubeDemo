@@ -11,8 +11,9 @@ node() {
                 dir('OpenCppCoverageDemo/cmake/x64/debug'){
                    sh 'make TestSource_coverage'
                 }
-                
+                  
                 sh 'gcovr -x -r . > OpenCppCoverageDemo/cmake/x64/debug/reports/gcovr_report.xml'
+                sh 'cppcheck --xml --xml-version=2 --enable=all TestSource 2> OpenCppCoverageDemo/cmake/x64/debug/reports/cppcheck-report.xml'
 
         }
         stage("Analyze Code"){
